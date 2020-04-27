@@ -1,0 +1,14 @@
+= Watchers in Body
+
+This plugin will allow watchers be added from the email's body via regex.  It adds watchers when it finds emails from "Watchers: "  
+
+== Installation
+
+To install the plugin follow the steps below:
+1. Clone or extract this into the `plugins` directory.  Located under `redmine` dir.
+2. Execute `bundle exec rake redmine:plugins:migrate RAILS_ENV=production` under the `redmine` dir
+3. Restart nginx or apache
+
+== Note
+
+Make sure the CRONJOB's rake command is setup to accept all (anonymous) emails
